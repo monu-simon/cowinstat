@@ -50,6 +50,7 @@ const Select = () => {
         <select onChange={(e) => {
             updateDistrict(e.target.value);
         }} className='ui search dropdown'>
+          <option>--Select district--</option>
           {districtList.map(district => {
             return (
               <option key={district.district_id} value={district.district_id}>

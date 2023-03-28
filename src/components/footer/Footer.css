@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #42275a;
+    margin-top:-10%;
+}
+
+.address{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.contactus{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}

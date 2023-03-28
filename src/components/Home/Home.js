@@ -33,9 +33,9 @@ const Home = () => {
       <Card title='Vaccination Count' contents='Daily Vaccination Count' count={dailyCount} />
       <Card title='Covisheild' contents='Total Covisheild Count' count={covishiels} />
       <Card title='Covaxin' contents='Total Covaxin Count' count={Covaxine} />
-      <Card title='Sputnik' contents='Daily Sputnik Count' count={sputnik} />
-      <Card title='Male' contents='' count={female} />
-      <Card title='Female' contents='' count={male} />
+      <Card title='Sputnik' contents='Total Sputnik Count' count={sputnik} />
+      <Card title='Male' contents='' count={male} />
+      <Card title='Female' contents='' count={female} />
     </div>
   )
 }

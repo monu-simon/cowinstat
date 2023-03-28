@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px 0;
+    gap: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,1);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+}
+
+.title h2{
+    letter-spacing: 2px;
+    color:green
+}

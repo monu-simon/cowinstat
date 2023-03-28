@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
 import Card from '../Card/Card';
 import { SelectedState } from '../Context/Context';
+import Statistics from '../Statistics/Statistics';
 import { getDateinYYYY } from '../Utils/Utils';
 import './Home.css'
 
@@ -36,6 +37,7 @@ const Home = () => {
       <Card title='Sputnik' contents='Total Sputnik Count' count={sputnik} />
       <Card title='Male' contents='' count={male} />
       <Card title='Female' contents='' count={female} />
+      {selectedState ? (<Statistics/>):<p></p>}
     </div>
   )
 }

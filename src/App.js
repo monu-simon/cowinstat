@@ -1,9 +1,10 @@
 import { useRoutes } from 'react-router-dom'
 import './App.css'
 import Header from './components/header/Header'
-import Home from './components/Home/Home';
+import Home from './components/Home/Home'
 import Book from './components/Book/Book'
-import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer'
+import Select from './components/Select/Select'
 
 function App () {
   const routes = useRoutes([
@@ -14,8 +15,11 @@ function App () {
   return (
     <>
       <Header />
-      <div className='content'>{routes}</div>
-      <Footer/>
+      <div className='content'>
+        <Select />
+        {routes}
+      </div>
+      <Footer />
     </>
   )
 }

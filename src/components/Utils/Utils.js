@@ -5,5 +5,5 @@ export function getDate() {
 
 export function getDateinYYYY() {
     const date = new Date();
-    return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
+    return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
 }

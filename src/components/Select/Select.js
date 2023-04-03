@@ -19,21 +19,19 @@ const Select = () => {
     getState()
   }, [])
 
-  useEffect(() => {
-    const getDistrict = async () => {
-      const res = await axios.get(
-        `https://cdn-api.co-vin.in/api/v2/admin/location/districts/${selectedState}`
-      )
-      updateDistrictList(res.data.districts)
-    }
-    getDistrict()
-  }, [selectedState])
+  const getDistrict = async (e) => {
+    updateState(e)
+    const res = await axios.get(
+      `https://cdn-api.co-vin.in/api/v2/admin/location/districts/${e}`
+    )
+    updateDistrictList(res.data.districts)
+  }
 
   return (
     <div>
       <select
         onChange={e => {
-          updateState(e.target.value)
+          getDistrict(e.target.value)
         }}
         className='ui search dropdown'
       >

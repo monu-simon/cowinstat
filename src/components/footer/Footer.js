@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='footer'>
         <div className='address'>
             <h1>Address</h1>
-            <p>Maiekal House</p>
+            <p>Maliekal House</p>
             <p>Thrissur Dist</p>
             <p>Kerala</p>
         </div>
